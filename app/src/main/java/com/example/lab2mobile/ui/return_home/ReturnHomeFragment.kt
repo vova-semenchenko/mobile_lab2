@@ -32,7 +32,7 @@ class ReturnHomeFragment : Fragment() {
         val root: View = binding.root
 
         binding.buttonOpenFirstActivity.setOnClickListener {
-            val intent = Intent(requireContext(), MainActivity::class.java)
+            val intent = Intent(context, MainActivity::class.java)
             startActivity(intent)
             activity?.finish()
         }
